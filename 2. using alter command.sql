@@ -26,7 +26,6 @@ rename to teachers1
 
 select * from teachers1 ;   -- show the table 
 
-
 alter table teachers     -- rename table name
 rename to teachers
 
