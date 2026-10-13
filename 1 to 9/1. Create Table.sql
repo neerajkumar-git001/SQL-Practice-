@@ -8,3 +8,4 @@ create table School
 );
 
 select * from School;
+
