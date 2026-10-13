@@ -49,3 +49,6 @@ Where Genre !='%Crime%'               -- it print all details only for (Series T
 Select Series_Title, Genre
 From Movie_Ratings
 Where Genre <>'%Crime%'              -- it is also print all details only for (Series Title , Genre )
+
+
+
