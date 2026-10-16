@@ -7,7 +7,6 @@ select current_timestamp;
 -- 1) date aprt function [only show perticular one date/value]
 select date_part('year', timestamp '2026-10-15 04:47:50');    --show only year  2026
 
-
 select date_part('hour', timestamp '2026-10-15 04:52:00');  --4
 
 select date_part('month', timestamp '2026-10-15 04:55:00');  --10
