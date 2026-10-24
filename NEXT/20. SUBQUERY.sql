@@ -56,3 +56,19 @@ INSERT INTO SALARY(EMP_ID,  NAME, SALARY)
 SELECT *
 FROM EMP
 WHERE EMP_ID IN (SELECT EMP_ID FROM SALARY);
+
+
+
+							--ASSIGNMENT QUESTION
+-- QUESTION :-  SHOW EMP_ID, SALESMAN NAME AND AGE OR THE EMPLOYEE WHOSE SALARY IS GREATERTHAN THAN 30000
+		--USING SUBQUERY 
+select emp_id, name , age 
+from emp 
+where emp_id in (select emp_id from salary where salary>30000)
+
+	--USING JOIN 
+select emp.emp_id, emp.name , emp.age 
+from emp 
+join salary 
+using (emp_id)
+where salary.salary>30000;
