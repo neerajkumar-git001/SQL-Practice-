@@ -1,6 +1,5 @@
 -- Date function (EXTRACT AND TO_CHAR, AGE FUNCTION )
 
-
 SELECT * FROM SALES_DATA;
 
 -- extarct month number from date 
