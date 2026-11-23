@@ -176,6 +176,14 @@ CREATE TABLE IF NOT EXISTS SALES (
 
 SELECT * FROM SALES ;
 
+INSERT INTO SALES (SALESPERSON, REGION , SALES_AMMOUNT)
+			VALUES('Anjali' , 'West' , 5000),
+			       ('Sachin ', 'East', 6000),
+				   ('Akash' , 'East', 5000),
+				   ('Vikash', 'West', 7000),
+				   ('Sejal', 'East', 8000),
+				   ('Isha', 'East', 8000);
+
 
 
 
