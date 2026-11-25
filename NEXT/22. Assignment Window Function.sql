@@ -53,7 +53,7 @@ where ranking <=5
 
 --5) Calculate Difference in Sales: For each employee
 SELECT *,
-     (SALES_AMOUNT - LAG(SALES_AMOUNT) OVER(PARTITION BY EMPLOYEE_ID )) AS DIFF_SALES
+     (SALES_AMOUNT - LAG(SALES_AMOUNT) OVER(PARTITION BY EMPLOYEE_ID ORDER BY SALE_DATE )) AS DIFF_SALES
 FROM EMP_SALES;
 
 --6) Compute Moving Average of Sales Amount: For each region,
